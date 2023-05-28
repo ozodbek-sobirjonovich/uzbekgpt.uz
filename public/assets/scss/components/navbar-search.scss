@@ -1,0 +1,30 @@
+input[type=search] {
+	width: 100%;
+	padding: 0.75em 1.23em;
+	padding-inline-start: 2.92em !important;
+	border: none;
+	border-radius: 2em;
+	background-color: var(--lqd-header-search-bg);
+	font-size: 0.875rem;
+	color: var(--lqd-header-search-color);
+
+	&:focus {
+		background-color: var(--lqd-header-search-bg);
+		color: var(--lqd-header-search-color-focus);
+	}
+}
+
+.navbar-search {
+	flex-shrink: 1;
+
+	.input-icon-addon {
+		padding-left: 0.75rem;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.navbar-search {
+		width: 435px;
+	}
+}
